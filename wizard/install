@@ -1,0 +1,217 @@
+[
+  {
+    "stepTitle": "基本配置",
+    "items": [
+      {
+        "type": "radio",
+        "field": "secure_mode",
+        "label": "运行模式",
+        "rules": [],
+        "options": [
+          {
+            "label": "单用户运行，节省内存(推荐)",
+            "value": "false"
+          },
+          {
+            "label": "多用户运行，密码保护",
+            "value": "true"
+          }
+        ],
+        "initValue": "false",
+        "helpText": "以下两项为多用户模式参数"
+      },
+      {
+        "type": "text",
+        "field": "invite_code",
+        "label": "注册邀请码",
+        "rules": [],
+        "options": [],
+        "initValue": "",
+        "helpText": "为空时开放注册，否则注册时需要输入邀请码"
+      },
+      {
+        "type": "password",
+        "field": "secure_key",
+        "label": "管理员密码",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "",
+        "helpText": "多用户模式时，前端管理用户空间的管理密码"
+      },
+      {
+        "type": "text",
+        "field": "ui_port",
+        "label": "服务监听端口",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "6389"
+      }
+    ]
+  },
+  {
+    "stepTitle": "高级配置，默认即可",
+    "items": [
+      {
+        "type": "switch",
+        "field": "cache_chapter",
+        "label": "缓存章节内容",
+        "rules": [],
+        "options": [],
+        "initValue": "true"
+      },
+      {
+        "type": "switch",
+        "field": "debug_log",
+        "label": "打开调试日志",
+        "rules": [],
+        "options": [],
+        "initValue": "false"
+      },
+      {
+        "type": "text",
+        "field": "auto_clear",
+        "label": "自动清理不活跃用户",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "0",
+        "helpText": "为0不清理，大于0为清理超过X天未登录的用户"
+      },
+      {
+        "type": "text",
+        "field": "shelf_update",
+        "label": "书架自动更新间隔时间",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "10",
+        "helpText": "单位分钟，必须是10的倍数"
+      },
+      {
+        "type": "text",
+        "field": "user_limit",
+        "label": "用户上限，最大 15",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "15"
+      },
+      {
+        "type": "switch",
+        "field": "enable_webdav",
+        "label": "新用户是否默认启用webdav",
+        "rules": [],
+        "options": [],
+        "initValue": "true"
+      },
+      {
+        "type": "switch",
+        "field": "enable_localstore",
+        "label": "新用户是否默认启用localStore",
+        "rules": [],
+        "options": [],
+        "initValue": "true"
+      },
+      {
+        "type": "switch",
+        "field": "enable_booksource",
+        "label": "新用户是否默认可编辑书源",
+        "rules": [],
+        "options": [],
+        "initValue": "true",
+        "helpText": "如果为false，则只能使用默认书源，不能新增/修改/删除"
+      },
+      {
+        "type": "switch",
+        "field": "enable_rss",
+        "label": "新用户是否默认可编辑RSS源",
+        "rules": [],
+        "options": [],
+        "initValue": "true"
+      },
+      {
+        "type": "text",
+        "field": "booksource_limit",
+        "label": "新用户默认书源上限",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "100"
+      },
+      {
+        "type": "text",
+        "field": "book_limit",
+        "label": "新用户默认书籍上限",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "200"
+      },
+      {
+        "type": "switch",
+        "field": "auto_backup",
+        "label": "是否自动备份用户数据",
+        "rules": [],
+        "options": [],
+        "initValue": "false"
+      },
+      {
+        "type": "text",
+        "field": "password_length",
+        "label": "用户密码最小长度",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "8"
+      },
+      {
+        "type": "text",
+        "field": "booksource_update",
+        "label": "远程书源定时更新间隔时间",
+        "rules": [
+          {
+            "required": true,
+            "message": "请输入内容"
+          }
+        ],
+        "options": [],
+        "initValue": "720",
+        "helpText": "单位分钟，必须是10的倍数"
+      }
+    ]
+  }
+]

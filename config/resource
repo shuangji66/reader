@@ -1,0 +1,38 @@
+{
+  "data-share": {
+    "shares": [
+      {
+        "name": "Reader",
+        "permission": {
+          "rw": [
+            "Reader"
+          ]
+        }
+      },
+      {
+        "name": "Reader/storage",
+        "permission": {
+          "rw": [
+            "Reader"
+          ]
+        }
+      },
+      {
+        "name": "Reader/logs",
+        "permission": {
+          "rw": [
+            "Reader"
+          ]
+        }
+      },
+      {
+        "name": "Reader/storage/localStore",
+        "permission": {
+          "rw": [
+            "Reader"
+          ]
+        }
+      }
+    ]
+  }
+}
